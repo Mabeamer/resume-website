@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+    margin:0; 
+    padding:0; 
+    height:100%; 
+}
+.container{
+    height: 100%;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+}
+.wrapper{
+    height: 100%;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: row;
+    background-color:   #d3d5e2 ;
+}
+
+.yearContainer{
+    border: 1px solid green;
+    width: 400px;
+    min-height: 100vh;
+    background-color: green;
+    
+}
+.pictureContainer{
+    background-color: red;
+}
+
+.pictureRow{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 200px;
+}
+.navigation ul{
+    display: flex;
+    list-style: none;
+}
+
+.navigation ul li{
+    margin-left: 20px;
+}
