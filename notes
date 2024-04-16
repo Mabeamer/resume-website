@@ -1,0 +1,32 @@
+#TODO
+-ytdl functionality
+-I want the page to take the Title, thumbnail, Time, file. (Does tihs information need to be laid in json)
+-Download options (webm, mp3, mp4)
+
+
+Current Issue-
+Need to have validation to see if the link is validation
+    -Youtube
+    -Soundcloud
+  #Does this need to be focused on right now or can I focus on validation after the functionality works?
+
+
+#Unsure if I am debugging properly using print statements.
+#checked: Printing to the console
+#I do not know if information from main.py is being sent to ytdl.py.
+#checked: Now sending information through files. 
+
+#SIDENOTES
+main.py-
+There is a need to check for a POST method to send information to a server, after that `request.form` to grab 
+the textbox information and store it inside of a python function.
+
+It takes a second to recieve hte information, maybe consider a timer for the end user?
+
+webdl.py-
+When link is grabbed there needs to be a check based off of the streams, the user can pick.
+I would be able to pick based off the 'itag'. Display a list of all the itags that fall under the desired choice
+(360p, 720p ect.)
+Then return the object/download to main(?)
+
+
