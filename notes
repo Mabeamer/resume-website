@@ -29,4 +29,6 @@ I would be able to pick based off the 'itag'. Display a list of all the itags th
 (360p, 720p ect.)
 Then return the object/download to main(?)
 
+flask --app main run 
+. .venv/bin/activate
 
