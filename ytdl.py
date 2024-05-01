@@ -6,10 +6,11 @@ import sys
 
 def converter(userLink):
     print('init')
-    ytLink = YouTube(userLink)
+    ytLink = YouTube(userLink.videoLink)
     print(ytLink.streams.filter(file_extension='mp4'))
 
     #ytLink.streams.filter(res='360p').first.download()
     dl = ytLink.streams.get_by_itag(18)
     dl.download()
+    return 
  
