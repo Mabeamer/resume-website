@@ -26,6 +26,10 @@ class ytvideo:
 def hello(name=None):
     return render_template('home.html', name=name, static_folder='static')
 
+@app.route("/photography")
+def photography(name=None):
+    return render_template('photography.html', name=name, static_folder='static')
+
 @app.route("/webdl", methods=['GET','POST'])
 def dl(name=None):
     woowoo = 'America ya! :D'
