@@ -1,9 +1,12 @@
 from flask import Flask, render_template, request, redirect, send_file
 #from flask_sqlalchemy import SQAlchemy
-from ytdl import *
+#from ytdl import *
 import sys
 
 app = Flask(__name__)
+
+#if __name__ == "__main__":
+#    app.run(host="0.0.0.0")
 
 class ytvideo:
     def __init__(self,videoLink,videoFile,videoName):
@@ -22,7 +25,7 @@ class ytvideo:
 # to be able to log in and out users
 #login_manager = LoginManager()
 #login_manager.init_app(app)
-@app.route("/")
+@app.route("/", methods=['GET','POST'])
 def hello(name=None):
     return render_template('home.html', name=name, static_folder='static')
 
@@ -30,7 +33,7 @@ def hello(name=None):
 def photography(name=None):
     return render_template('photography.html', name=name, static_folder='static')
 
-@app.route("/webdl", methods=['GET','POST'])
+#@app.route("/webdl", methods=['GET','POST'])
 def dl(name=None):
     woowoo = 'America ya! :D'
     print(woowoo)
@@ -63,3 +66,6 @@ def fileDl(name=None):
 @app.route('/test.mp4', methods=['GET','POST'])
 def testDl(name=None):
     return send_file('test.mp4')
+
+if __name__ == "__main__":
+	app.run(host='0.0.0.0')

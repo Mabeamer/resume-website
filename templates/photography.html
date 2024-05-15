@@ -16,7 +16,17 @@
      
         <div class="pictureContainer">
           <div class="pictureFrame">
-        
+          <!--modal-->
+            <img src={{ url_for('static', filename='images/image01.jpg')}} class="pictureFrame">
+
+              <!--open-->
+              <div id="openModal" class="modal">
+              <!--close-->
+              <span class="close">&times;</span>
+
+              <!--modal content-->
+              <img class="modal-content" id="img01">
+              </div>
           </div>
           <div class="pictureFrame">
 

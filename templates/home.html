@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css')}} integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{url_for('static', filename='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')}}">
-
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>    
     <!--need to self host font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +41,7 @@
             </nav>
         </header>
         <div class="defContainer">
-            <div class="iDefContainer"><h1>My name is Alex </h1></div>
+            <div class="iDefContainer"><h1>Adventures of </h1></div>
             <div class="iDefContainer">
             <h1>A Junior Developer.</h1>
             </div>
@@ -58,18 +59,15 @@
             <div class="testContainer" onClick="boxShow()">
                 <!--<img src="images/image01.jpg"alt='hello'>-->
                 <div class="nestedTestContainer">
-                    <div><img class="projectImage" src="images/image01.jpg" alt="First slide"></div>
-                    <div><h2 class="projectDesc">Chrome E-Reader Notepad Extension</a></h2></div>
+                    <div><img class="projectImage" src="images/image01.jpg" alt=""></div>
+                    <div><h2 class="projectDesc">Bwomp.org</a></h2></div>
                 </div>
             </div>
             <div class="descAlignment">
                 <div class="descContainer">
                     <li class="projectDescLi">
-                        <ul>Chrome extension that allows the user to write and place notes on the current viewed webpage.
-                            It was created as a class project using Javascript, CSS, and python for main functionality. Testing was written
-                            using a combination of Mocha, Chai, and Sinion-Chrome to test add-on functionality with Google’s
-                            extension database.</ul>
-                        <ul><a href="https://github.com/Mabeamer/itis4155-E-Reader"><i class="fa-brands fa-github"></i> github</a></ul>
+                      <ul>This website is a portfolio website used to showcase the hobbies I am interested in alongside the projects I have built over time.
+			Built Uitilizing Flask api with gunicorn as the http server and nginx acting as the reverse proxy for https certifcation.</ul>
                     </li>
                 </div>
             </div>
