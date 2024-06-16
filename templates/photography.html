@@ -3,6 +3,7 @@
 <head>
     <title>Lunar Tempest</title>
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='photoStyle.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
 </head>
 <body>
     <nav class="navigation">
@@ -37,55 +38,28 @@
 
         <div class="pictureContainer">
           <div class="pictureFrame">
-             <!-- Trigger the Modal -->
-             <img id="myImg" src={{url_for('static', filename='images/DSCF1567.jpg')}} class="pictureFrame" alt="">
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn">Open Modal</button>
 
-             <!-- The Modal -->
-             <div id="myModal" class="modal">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+            <span class="close">×</span>
+            <p>Some text in the Modal..</p>
+    </div>
+</div>
+
  
-             <!-- The Close Button -->
-               <span class="close">&times;</span>
- 
-             <!-- Modal Content (The Image) -->
-               <img class="modal-content" id="img01">
- 
-             <!-- Modal Caption (Image Text) -->
-               <div id="caption"></div>
-             </div>
           </div>
-          <div class="pictureFrame">
-             <!-- Trigger the Modal -->
-             <img id="myImg1" src={{url_for('static', filename='images/DSCF1659.jpg')}} class="pictureFrame" alt="">
 
-             <!-- The Modal -->
-             <div id="myModal" class="modal">
- 
-             <!-- The Close Button -->
-               <span class="close">&times;</span>
- 
-             <!-- Modal Content (The Image) -->
-               <img class="modal-content" id="img02">
- 
-             <!-- Modal Caption (Image Text) -->
-               <div id="caption"></div>
-             </div>
+          <div class="pictureFrame">
+            <img id='' src={{url_for('static', filename='images/DSCF1796.jpg')}} class="pictureFrame">
+            <a href={{url_for('static', filename='images/DSCF1796.jpg')}} data-lightbox="roadtrip">Image #1</a> 
           </div>
-          <div class="pictureFrame">
-             <!-- Trigger the Modal -->
-             <img id="myImg2" src={{url_for('static', filename='images/DSCF1783.jpg')}} class="pictureFrame" alt="">
 
-             <!-- The Modal -->
-             <div id="myModal" class="modal">
- 
-             <!-- The Close Button -->
-               <span class="close">&times;</span>
- 
-             <!-- Modal Content (The Image) -->
-               <img class="modal-content" id="img03">
- 
-             <!-- Modal Caption (Image Text) -->
-               <div id="caption"></div>
-             </div>
+          <div class="pictureFrame">
+             
           </div>
         </div>
 
@@ -94,7 +68,7 @@
         <div class="pictureContainer">
           <div class="pictureFrame">
              <!-- Trigger the Modal -->
-            <img id="myImg" src={{url_for('static', filename='images/DSCF1796.jpg')}} class="pictureFrame" alt="">
+            <img id="myImg4" src={{url_for('static', filename='images/DSCF1796.jpg')}} class="pictureFrame" alt="">
 
             <!-- The Modal -->
             <div id="myModal" class="modal">
@@ -111,7 +85,7 @@
           </div>
           <div class="pictureFrame">
              <!-- Trigger the Modal -->
-             <img id="myImg" src={{url_for('static', filename='images/DSCF1967.jpg')}} class="pictureFrame" alt="">
+             <img id="myImg5" src={{url_for('static', filename='images/DSCF1967.jpg')}} class="pictureFrame" alt="">
 
              <!-- The Modal -->
              <div id="myModal" class="modal">
@@ -128,7 +102,7 @@
           </div>
           <div class="pictureFrame">
              <!-- Trigger the Modal -->
-             <img id="myImg" src={{url_for('static', filename='images/DSCF1975.jpg')}} class="pictureFrame" alt="">
+             <img id="myImg6" src={{url_for('static', filename='images/DSCF1975.jpg')}} class="pictureFrame" alt="">
 
              <!-- The Modal -->
              <div id="myModal" class="modal">
@@ -151,7 +125,7 @@
         <div class="pictureContainer">
           <div class="pictureFrame">
              <!-- Trigger the Modal -->
-             <img id="myImg" src={{url_for('static', filename='images/DSCF1981.jpg')}} class="pictureFrame" alt="">
+             <img id="myImg7" src={{url_for('static', filename='images/DSCF1981.jpg')}} class="pictureFrame" alt="">
 
              <!-- The Modal -->
              <div id="myModal" class="modal">
@@ -168,7 +142,7 @@
           </div>
           <div class="pictureFrame">
              <!-- Trigger the Modal -->
-             <img id="myImg" src={{url_for('static', filename='images/DSCF1992.jpg')}} class="pictureFrame" alt="">
+             <img id="myImg8" src={{url_for('static', filename='images/DSCF1992.jpg')}} class="pictureFrame" alt="">
 
              <!-- The Modal -->
              <div id="myModal" class="modal">
@@ -185,7 +159,7 @@
           </div>
           <div class="pictureFrame">
              <!-- Trigger the Modal -->
-             <img id="myImg" src={{url_for('static', filename='images/DSCF1993.jpg')}} class="pictureFrame" alt="">
+             <img id="myImg9" src={{url_for('static', filename='images/DSCF1993.jpg')}} class="pictureFrame" alt="">
 
              <!-- The Modal -->
              <div id="myModal" class="modal">
@@ -204,5 +178,5 @@
       </div>
     </div>
 </body>
-<script src="{{url_for('static', filename='script.js')}}"></script>
+<script src="{{url_for('static', filename='lightbox-plus-jquery.js')}}"></script>
 </html>
