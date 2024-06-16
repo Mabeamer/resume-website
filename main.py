@@ -27,12 +27,22 @@ class ytvideo:
 #login_manager.init_app(app)
 @app.route("/", methods=['GET','POST'])
 def hello(name=None):
-    return render_template('home.html', name=name, static_folder='static')
+    return render_template('photography.html', name=name, static_folder='static')
+#TODO: figure out how to sort the images by state/year, for now just update the list to represent which sorted function they have.
 
-@app.route("/photography")
+@app.route("/photography", methods=['GET','POST'])
 def photography(name=None):
     return render_template('photography.html', name=name, static_folder='static')
 
+#these naming conventions need to be looked at
+
+@app.route("/photography/city")
+def citySort(name=None):
+    return render_template('photographyCity.html', name=name, static_folder='static')
+
+@app.route("/photography/year")
+def yearSort(name=None):
+    return render_template('photographyYear.html', name=name, static_folder='static')
 #@app.route("/webdl", methods=['GET','POST'])
 def dl(name=None):
     woowoo = 'America ya! :D'
