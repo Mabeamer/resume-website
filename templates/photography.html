@@ -11,7 +11,7 @@
 
     <div class="wrapper">
       <div class="yearFrame">
-        
+
         <div class="menuChoice">
           <form name="sortForm">
             <button class="sortBtn" id="sortBy">sort by</button>
@@ -33,7 +33,7 @@
 
       </div>
       <div class="pictureWrapper">
-        
+
         <!--new row-->
 
         <div class="pictureContainer">
@@ -44,22 +44,28 @@
             <!-- The Modal -->
             <div id="myModal" class="modal">
             <!-- Modal content -->
-            <div class="modal-content">
-            <span class="close">×</span>
-            <p>Some text in the Modal..</p>
-    </div>
-</div>
-
- 
+                <div class="modal-content">
+                    <span class="close">×</span>
+                    <p>Some text in the Modal..</p>
+                </div>
+            </div>
           </div>
 
           <div class="pictureFrame">
-            <img id='' src={{url_for('static', filename='images/DSCF1796.jpg')}} class="pictureFrame">
-            <a href={{url_for('static', filename='images/DSCF1796.jpg')}} data-lightbox="roadtrip">Image #1</a> 
+              <div class="imgContainer"
+                  <a href={{url_for('static', filename='images/DSCF1796.jpg')}} data-lightbox="roadtrip"><img id='' src={{url_for('static', filename='images/DSCF1796.jpg')}} class="pictureFrame"></a>
+              </div>
+
+              <div class="imgContainer"
+                  <a href={{url_for('static', filename='images/DSCF1796.jpg')}} data-lightbox="roadtrip"><img id='' src={{url_for('static', filename='images/DSCF1796.jpg')}} class="pictureFrame"></a>
+              </div>
+              <div class="imgContainer"
+                  <a href={{url_for('static', filename='images/DSCF1796.jpg')}} data-lightbox="roadtrip"><img id='' src={{url_for('static', filename='images/DSCF1796.jpg')}} class="pictureFrame"></a>
+              </div>
           </div>
 
           <div class="pictureFrame">
-             
+
           </div>
         </div>
 
@@ -89,13 +95,13 @@
 
              <!-- The Modal -->
              <div id="myModal" class="modal">
- 
+
              <!-- The Close Button -->
                <span class="close">&times;</span>
- 
+
              <!-- Modal Content (The Image) -->
                <img class="modal-content" id="img05">
- 
+
              <!-- Modal Caption (Image Text) -->
                <div id="caption"></div>
              </div>
@@ -106,20 +112,20 @@
 
              <!-- The Modal -->
              <div id="myModal" class="modal">
- 
+
              <!-- The Close Button -->
                <span class="close">&times;</span>
- 
+
              <!-- Modal Content (The Image) -->
                <img class="modal-content" id="img06">
- 
+
              <!-- Modal Caption (Image Text) -->
                <div id="caption"></div>
              </div>
           </div>
-        
+
         </div>
-        
+
         <!--new row-->
 
         <div class="pictureContainer">
@@ -129,13 +135,13 @@
 
              <!-- The Modal -->
              <div id="myModal" class="modal">
- 
+
              <!-- The Close Button -->
                <span class="close">&times;</span>
- 
+
              <!-- Modal Content (The Image) -->
                <img class="modal-content" id="img07">
- 
+
              <!-- Modal Caption (Image Text) -->
                <div id="caption"></div>
              </div>
@@ -146,13 +152,13 @@
 
              <!-- The Modal -->
              <div id="myModal" class="modal">
- 
+
              <!-- The Close Button -->
                <span class="close">&times;</span>
- 
+
              <!-- Modal Content (The Image) -->
                <img class="modal-content" id="img08">
- 
+
              <!-- Modal Caption (Image Text) -->
                <div id="caption"></div>
              </div>
@@ -163,13 +169,13 @@
 
              <!-- The Modal -->
              <div id="myModal" class="modal">
- 
+
              <!-- The Close Button -->
                <span class="close">&times;</span>
- 
+
              <!-- Modal Content (The Image) -->
                <img class="modal-content" id="img09">
- 
+
              <!-- Modal Caption (Image Text) -->
                <div id="caption"></div>
              </div>
@@ -179,4 +185,5 @@
     </div>
 </body>
 <script src="{{url_for('static', filename='lightbox-plus-jquery.js')}}"></script>
+<script src="{{url_for('static', filename='script.js')}}"></script>
 </html>
